@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+.SF_forms label {
+  width: 100%;
+}
+
+.SF_forms .SF_captcha_field img {
+  margin-bottom: 5px;
+}
+
+
+
+
+.SF_display_horizontal li {
+  display: inline-block !important;
+  margin-right: 20px !important;
+}
+
+.SF_display_vertical li {
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 0;
+  border: 1px solid transparent !important;
+}
+
+.SF_csrf_field {
+  display: none;
+}
+
+.SF_forms ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.SF_saving_entries {
+  display: none;
+}
+
+.SF_upload_container {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.SF_upload_progress {
+  border: 1px solid #7f8383;
+  background-color: #7f8383;
+  width: 100%;
+  display: none;
+}
+
+.SF_upload_filename_label {
+  margin: 5px 0px;
+}
+
+.SF_progress_percent {
+  float: left;
+  margin-top: 3px;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  display: none;
+}
+
+.SF_upload_progress .SF_progress {
+  background-color: #3a3737;
+  padding: 15px;
+  width: 25%;
+  text-align: center;
+  color: #fff;
+  display: none;
+}
+
+.SF_upload_success {
+  color: green;
+  display: none;
+}

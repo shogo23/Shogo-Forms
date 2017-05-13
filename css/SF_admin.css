@@ -1,0 +1,735 @@
+@charset "UTF-8";
+
+.clear {
+  clear: both;
+}
+
+.SF_display_horizontal li {
+  display: inline-block !important;
+  margin-right: 20px;
+}
+
+.SF_display_vertical li {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.SF_mobile_admin_main_nav, .SF_mobile_admin_container, .SF_about_mobile {
+  display: none;
+}
+
+.nav-active {
+  color: yellow !important;
+  border-bottom: 1px solid transparent !important;
+}
+
+.SF_admin_main_nav {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.SF_admin_main_nav ul {
+  border-bottom: 1px solid #026bbb;
+}
+
+.SF_admin_main_nav ul li {
+  display: inline-block;
+  margin-bottom: 0px;
+}
+
+.SF_admin_main_nav ul li a {
+  border: 1px solid #026bbb;
+  background-color: #037bd7;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 150%;
+  width: 140px;
+}
+
+.SF_admin_main_nav ul li a:hover {
+  color: yellow;
+}
+
+.SF_error_screen {
+  border: 1px solid #d91809;
+  background-color: #fff;
+  position: fixed;
+  width: 50%;
+  z-index 10;
+  margin-left: 20%;
+  margin-top: 5%;
+  display: none;
+}
+
+.SF_success_screen {
+  border: 1px solid #029802;
+  background-color: #029802;
+  color: #fff;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.SF_error_screen .SF_header {
+  padding: 5px;
+  background-color: #d91809;
+  color: #fff;
+}
+
+.SF_error_screen .SF_message {
+  padding: 15px 10px;
+  text-align: center;
+  max-height: 60px;
+  overflow: auto;
+}
+
+.SF_error_screen .SF_choices {
+  padding: 10px;
+  text-align: center;
+}
+
+.SF_error_screen .SF_ok {
+  text-align: center;
+}
+
+.SF_success_screen {
+  display: none;
+}
+
+.SF_form_list {
+  width: 97%;
+}
+
+.SF_form_list table {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid #026bbb;
+  background-color: #fff;
+}
+
+.SF_form_list table td {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #037bd7;
+}
+
+.SF_form_list table thead th {
+  border: 1px solid #037bd7;
+  background-color: #037bd7;
+  color: #fff;
+}
+
+.SF_empty_form {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.SF_admin_cf_name_container {
+
+}
+
+.SF_admin_cf_name_container label {
+  font-size: 120%;
+}
+
+.SF_admin_cf_form_name {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #413a3a !important;
+  margin-top: 5px;
+}
+
+.SF_btn_container {
+  text-align: right;
+  padding: 10px;
+}
+
+.SF_form_list {
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.SF_admin_cf_container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.SF_admin_ajax_loader {
+  display: none;
+}
+
+.SF_admin_cf_container .SF_form_btns ul {
+  text-align: center;
+}
+
+.SF_admin_cf_container .SF_form_btns ul li {
+  display: inline-block;
+}
+
+.SF_admin_cf_container .SF_gen_forms {
+  border: 1px solid #413a3a;
+  background-color: #f8f5f5;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.SF_admin_cf_container .SF_after_sub_message, .SF_admin_cf_container .SF_after_sub_message_font_color {
+  border: 1px solid #000;
+  width: 100%;
+}
+
+.SF_form_success_contents [type=text] {
+  margin-bottom: 10px;
+}
+
+.SF_form_success_contents .SF_forms_ajax_loader_list {
+  margin-top: 5px;
+}
+
+.SF_form_success_contents .SF_forms_ajax_loader_list li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+
+.SF_form_success_contents label {
+  font-size: 130%;
+  line-height: 25px;
+}
+
+.SF_form_success_contents .SF_page_redirect_url {
+  width: 100%;
+}
+
+
+.SF_btns {
+  padding: 10px;
+  text-align: right;
+}
+
+.SF_cf_top {
+  text-align: right;
+}
+
+.SF_del, .SF_minimizer {
+  cursor: pointer;
+}
+
+.SF_cf_field_contents p [type=text], .SF_cf_field_contents p [type=email] {
+  border: 1px solid #413a3a;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px;
+}
+
+.SF_cf_field_contents p [type=number] {
+  width: 60px;
+  border: 1px solid #413a3a;
+}
+
+.SF_ajax_create_form_container .SF_ajax_form_text {
+  border: 1px solid #413a3a;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.SF_dropdown_option_container {
+  margin-bottom: 20px;
+}
+
+.SF_radio_buttons_container li {
+  margin-bottom: 20px;
+}
+
+.SF_radio_display_contents {
+  margin-top: 10px;
+}
+
+.SF_field_name_validation {
+  margin-top: 20px;
+}
+
+.SF_field_name_styling_radio {
+  margin-top: 20px;
+}
+
+.SF_field_name_styling_radio ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.SF_checbox_form ul {
+  width: 50%;
+  margin-left: 2%;
+}
+
+.SF_field_name_styling ul li {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.SF_checkbox_display_contents {
+  margin-top: 20px;
+}
+
+.SF_checkbox_header_opt {
+  margin-top: 20px;
+}
+
+.SF_validation_contents {
+  margin-top: 10px;
+  display: none;
+}
+
+.SF_upload_container {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.SF_upload_progress {
+  border: 1px solid #7f8383;
+  background-color: #7f8383;
+  width: 100%;
+}
+
+.SF_upload_filename_label {
+  margin: 5px 0px;
+}
+
+.SF_progress_percent {
+  float: left;
+  margin-top: 3px;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+}
+
+.SF_upload_progress .SF_progress {
+  background-color: #3a3737;
+  padding: 15px;
+  width: 70%;
+}
+
+.SF_upload_progress .SF_progress {
+  text-align: center;
+  color: #fff;
+}
+
+.SF_fa_error_message {
+  margin-top: 50px;
+}
+
+.SF_fa_error_message .SF_fa_error_message_preview {
+  font-size: 20px;
+  line-height: 0px;
+}
+
+.SF_fa_error_message label {
+  font-size: 16px;
+}
+
+.SF_fa_error_message span {
+  display: block;
+}
+
+.SF_fa_error_message ul {
+  margin-top: 20px;
+}
+
+.SF_fa_success_message {
+
+}
+
+.SF_fa_error_message ul li input {
+  margin-top: 2px;
+  margin-bottom: 15px;
+  width: 50%;
+}
+
+.SF_fa_afer_upload_message_preview h4 {
+  font-size: 20px;
+  line-height: 0px;
+}
+
+.SF_fa_afer_upload_message_preview label {
+  font-size: 16px;
+}
+
+.SF_fa_afer_upload_message_preview span {
+  color: #04BC2A;
+}
+
+.SF_fa_success_message ul {
+  margin-top: 20px;
+}
+
+.SF_fa_success_message ul li input {
+  width: 50%;
+}
+
+
+
+.SF_field_prev_btn_container {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.SF_custom_field_style {
+  display: none;
+}
+
+.SF_custom_field_style [type=text], .SF_custom_field_style [type=number] {
+  padding: 5px;
+  width: 50%;
+}
+
+.SF_custom_field_style  label {
+  line-height: 25px;
+}
+
+.SF_custom_field_style  ul li {
+  margin-bottom: 10px;
+}
+
+
+
+.SF_form_entries_container {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.SF_entries_options {
+  border: 1px solid #026bbb;
+  background-color: #037bd7;
+  color: #fff;
+  padding: 5px;
+  text-align: right;
+}
+
+.SF_entries_contents {
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #037bd7;
+}
+
+.SF_form_entry {
+  border: 1px solid #026bbb;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.SF_unread {
+  border: 3px solid #026bbb;
+}
+
+.SF_form_entry h4 {
+  font-size: 130%;
+}
+
+.SF_form_entry ul li {
+  display: block;
+  font-size: 120%;
+}
+
+.SF_entries_checkbox {
+  text-align: right;
+}
+
+.SF_single_entry_container {
+  border: 1px solid #026bbb;
+  background-color: #fff;
+  margin-top: 10px;
+}
+
+.SF_singe_entry_header {
+  background-color: #037bd7;
+  padding: 10px;
+  color: #fff;
+  font-size: 130%;
+}
+
+.SF_single_entry_container ul {
+  padding: 10px;
+}
+
+.SF_single_entry_container ul li label {
+  font-weight: bold;
+  font-size: 140%;
+}
+
+.SF_single_entry_container ul li {
+  font-size: 110%;
+  margin-bottom: 20px;
+}
+
+.SF_single_entry_container ul li ul li {
+  margin-bottom: 10px
+}
+
+.SF_single_entry_btns {
+  text-align: right;
+  padding: 10px;
+}
+
+.SF_widget_title, .SF_widget_shortcode {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.SF_about_main {
+  width: 100%;
+  overflow-y: auto;
+}
+
+.SF_about_banner {
+  background-image: url(/wp-content/plugins/shogo-forms/img/about/shogo-forms-banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.SF_about_description {
+  font-size: 20px;
+  border: 2px solid #037bd7;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 70%;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 15px 10px 5px #4eb1fd;
+}
+
+.SF_customize_field_text, .SF_about_customize_front_end, .SF_about_create_form, .SF_about_author_header {
+  font-size: 30px;
+  border: 2px solid #037bd7;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 50%;
+  text-align: center;
+  margin: 20px auto;
+  margin-top: 100px;
+  padding: 20px;
+  line-height: 28px;
+  box-shadow: 15px 10px 5px #4eb1fd;
+}
+
+.SF_about_create_form {
+  font-size: 28px;
+}
+
+.SF_about_customize_bg {
+  background-image: url(/wp-content/plugins/shogo-forms/img/about/customize-field.jpg);
+  background-repeat: none;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.SF_about_customize_bg2 {
+  background-image: url(/wp-content/plugins/shogo-forms/img/about/customize-front-end.jpg);
+  background-repeat: none;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.SF_about_customize_bg3 {
+  background-image: url(/wp-content/plugins/shogo-forms/img/about/create_form.jpg);
+  background-repeat: none;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.SF_about_author_details {
+  font-size: 16px;
+  border: 2px solid #037bd7;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 70%;
+  margin: 20px auto;
+  margin-top: 40px;
+  padding: 20px;
+  box-shadow: 15px 10px 5px #4eb1fd;
+}
+
+.SF_checkbox_preview_group li {
+  margin-left: 2%
+}
+
+@media screen and (max-width: 878px) {
+  .SF_about_banner {
+    background-image: url(/wp-content/plugins/shogo-forms/img/about/shogo-forms-banner-878.jpg);
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .SF_about_banner {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .SF_admin_main_nav, .SF_form_list table {
+    display: none;
+  }
+
+  .SF_mobile_admin_main_nav, .SF_mobile_admin_container {
+    display: block;
+  }
+
+  .SF_mobile_admin_main_nav {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .SF_mobile_admin_main_nav .SF_mobile_nav_select {
+    width: 60%;
+  }
+
+
+
+  .SF_mobile_admin_container li {
+    margin-bottom: 20px;
+  }
+
+  .SF_mobile_admin_container li .SF_mobile_form_container {
+    border: 1px solid #037bd7;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .SF_mobile_admin_container li .SF_mobile_form_container .SF_mobile_form_label {
+    border: 1px solid #026bbb;
+    background-color: #037bd7;
+    text-align: right;
+    padding: 0 5px;
+  }
+
+  .SF_mobile_admin_container li .SF_mobile_form_container .SF_mobile_form_contents {
+    padding: 10px;
+    background-color: #fff;
+  }
+
+  .SF_mobile_admin_container li .SF_mobile_form_container .SF_flash {
+    color: green;
+    display: none;
+  }
+
+  .SF_mobile_admin_container li .SF_mobile_form_container .SF_mobile_form_contents ul li {
+    font-size: 120%;
+  }
+
+  .SF_mobile_admin_container li .SF_mobile_form_container .SF_mobile_form_contents ul li:first-child {
+    font-size: 140%;
+  }
+
+  .SF_mobile_admin_container li .SF_mobile_form_container .SF_mobile_form_opt {
+    text-align: right;
+  }
+
+  .SF_mobile_admin_container li .SF_mobile_form_container .SF_mobile_form_opt ul li {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .SF_about_main {
+    display: none;
+  }
+
+  .SF_about_mobile {
+    display: block;
+  }
+
+  .SF_about_banner_mobile {
+    background-image: url(/wp-content/plugins/shogo-forms/img/about/shogo-forms-banner-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .SF_about_description_mobile {
+    font-size: 20px;
+    border: 2px solid #037bd7;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 15px 10px 5px #4eb1fd;
+  }
+
+  .SF_about_customize_header_mobile, .SF_about_front_end_header_mobile, .SF_about_create_form_mobile, .SF_about_author_details_header_mobile {
+    font-size: 25px;
+    border: 2px solid #037bd7;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+    margin: 20px auto;
+    margin-top: 100px;
+    padding: 25px;
+    line-height: 25px;
+    box-shadow: 15px 10px 5px #4eb1fd;
+  }
+
+  .SF_about_customize_bg_mobile {
+    background-image: url(/wp-content/plugins/shogo-forms/img/about/customize-field-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .SF_about_customize_bg2_mobile {
+    background-image: url(/wp-content/plugins/shogo-forms/img/about/customize-front-end-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .SF_about_customize_bg3_mobile {
+    background-image: url(/wp-content/plugins/shogo-forms/img/about/create_form_mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .SF_about_author_details_mobile {
+    border: 1px solid #037bd7;
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .SF_about_author_details_mobile ul li {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 352px) {
+  .SF_single_entry_btns span {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px !important;
+  }
+}
+
+/* Required */
+
+.SF_hidden {
+  opacity: 0 !important;
+}
+
+.SF_visible {
+  opacity: 1 !important;
+}
