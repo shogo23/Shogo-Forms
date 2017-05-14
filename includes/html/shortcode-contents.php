@@ -1009,7 +1009,7 @@ $fa_field_count = 0;
                   <img src="/wp-content/plugins/shogo-forms/includes/captcha.php?post_name=<?php echo $post_name; ?>" />
                 </div>
                 <div>
-                  <input type="text" id="<?php echo $post_name; ?>_captcha" class="SF_captcha_field" placeholder="Enter image code here" />
+                  <input type="text" id="captcha" class="SF_captcha_field" placeholder="Enter image code here" />
                 </div>
                 <div class="captcha-error">&nbsp;</div>
               </li>
@@ -1082,7 +1082,7 @@ $fa_field_count = 0;
                   <img src="/wp-content/plugins/shogo-forms/includes/captcha.php?post_name=<?php echo $post_name; ?>" />
                 </div>
                 <div>
-                  <input type="text" id="<?php echo $post_name; ?>_captcha" class="SF_captcha_field" placeholder="<?php echo $captcha_field_placeholder; ?>" style="border: <?php echo $captcha_field_border_size . 'px solid ' . $captcha_field_border_color; ?>; background-color: <?php echo $captcha_field_background_color; ?>; color: <?php echo $captcha_field_font_color; ?>; padding: <?php echo $captcha_field_padding_y . 'px ' .$captcha_field_padding_x .'px'; ?>; width: <?php echo $captcha_field_width . $captcha_field_width_type; ?>;" />
+                  <input type="text" id="captcha" class="SF_captcha_field" placeholder="<?php echo $captcha_field_placeholder; ?>" style="border: <?php echo $captcha_field_border_size . 'px solid ' . $captcha_field_border_color; ?>; background-color: <?php echo $captcha_field_background_color; ?>; color: <?php echo $captcha_field_font_color; ?>; padding: <?php echo $captcha_field_padding_y . 'px ' .$captcha_field_padding_x .'px'; ?>; width: <?php echo $captcha_field_width . $captcha_field_width_type; ?>;" />
                 </div>
                 <div class="captcha-error">&nbsp;</div>
               </li>
@@ -2209,7 +2209,7 @@ $fa_field_count = 0;
           ?>
 
           //If Captcha Field is not empty.
-          if ( jQuery(".SF_<?php echo $post_name; ?> #<?php echo $post_name; ?>_captcha").val() == "" ) {
+          if ( jQuery(".SF_<?php echo $post_name; ?> #captcha").val() == "" ) {
 
             //Set Validation Message.
             jQuery(".SF_<?php echo $post_name; ?> .captcha-error").css("color", "<?php echo $captcha_validation_font_color; ?>").html("<?php echo $captcha_validation_message; ?>");
@@ -2300,7 +2300,7 @@ $fa_field_count = 0;
                 "action": "SF_forms",
                 "operation": "captcha_validation",
                 "post_name": "<?php echo $post_name; ?>",
-                "captcha": jQuery("#<?php echo $post_name; ?>_captcha").val()
+                "captcha": jQuery(".SF_<?php echo $post_name; ?> #captcha").val()
               };
 
               //Initiate Ajax Request.
