@@ -224,6 +224,9 @@ $_SESSION['success_settings'] = json_decode( $meta['success_settings'][0], true 
 	//Checkox Field Button on Click Event.
   jQuery("#SF_checkbox").on("click", function() {
 
+    //Change Boolean property.
+    field_button_click = true;
+
 		//Ajax Properties.
     var data = {
       "action": "SF_forms",

@@ -328,6 +328,8 @@ $_SESSION['success_settings'] = array(
       "operation": "create_form"
     };
 
+		jQuery(".SF_gen_forms").html("<img src='/wp-content/plugins/shogo-forms/img/ajax-loader.gif' /> Please Wait...");
+
 		//Initiate Ajax Request.
     jQuery.post(ajaxurl, data, function(r) {
 

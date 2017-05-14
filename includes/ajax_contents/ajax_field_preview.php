@@ -136,7 +136,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <label style="color: <?php echo $label_font_color; ?>; font-size: <?php echo $label_size . $label_font_size_type; ?>;"><?php if ( ! empty ( $_SESSION['create_form'][$pos]['number_field']['label'] ) ) echo $_SESSION['create_form'][$pos]['number_field']['label'] . ':'; else echo 'The Label:'; ?></label><br />
-<input type="number" class="SF_number_field_preview SF_field_preview" value="11" placeholder="<?php echo $placeholder; ?>" style="border-width: <?php echo $border_size; ?>px; border-style: solid; border-color:<?php echo $border_color; ?>; background-color: <?php echo $background_color; ?>; color: <?php echo $font_color; ?>; padding: <?php echo $padding_y; ?>px <?php echo $padding_x; ?>px; border-radius: <?php echo $border_radius; ?>px; width: <?php echo $width . $width_type; ?>;" />
+<input type="number" class="SF_number_field_preview SF_field_preview" value="11" placeholder="<?php echo $placeholder; ?>" style="border-width: <?php echo $border_size; ?>px; border-style: solid; border-color:<?php echo $border_color; ?>; background-color: <?php echo $background_color; ?>; color: <?php echo $font_color; ?>; padding: <?php echo $padding_y; ?>px <?php echo $padding_x; ?>px; border-radius: <?php echo $border_radius; ?>px; width: <?php echo $width . $width_size_type; ?>;" />
 
 <?php endif; ?>
 
@@ -641,8 +641,8 @@ if ( ! defined( 'ABSPATH' ) ) {
   }
 ?>
 
-  <label style="color: <?php echo $label_font_color; ?>; font-size: <?php echo $label_size . $label_font_size_type; ?>;"><?php if ( ! empty ( $form['textarea']['label'] ) ) echo $form['textarea']['label'] . ':'; else echo 'The Label:'; ?></label><br />
-  <textarea class="SF_textarea_field_preview SF_field_preview" placeholder="<?php echo $placeholder; ?>" style="border-width: <?php echo $border_size; ?>px; border-style: solid; border-color:<?php echo $border_color; ?>; background-color: <?php echo $background_color; ?>; color: <?php echo $textarea_field_font_color; ?>; padding: <?php echo $padding_y; ?>px <?php echo $padding_x; ?>px; border-radius: <?php echo $border_radius; ?>px; width: <?php echo $width . $width_size_type; ?>; height: <?php echo $height . $height_type; ?>; ">Some Text...</textarea>
+  <label style="color: <?php echo $label_font_color; ?>; font-size: <?php echo $label_size . $label_font_size_type; ?>;"><?php if ( ! empty ( $_SESSION['create_form'][$pos]['textarea']['label'] ) ) echo $_SESSION['create_form'][$pos]['textarea']['label'] . ':'; else echo 'The Label:'; ?></label><br />
+  <textarea class="SF_textarea_field_preview SF_field_preview" placeholder="<?php echo $placeholder; ?>" style="border-width: <?php echo $border_size; ?>px; border-style: solid; border-color:<?php echo $border_color; ?>; background-color: <?php echo $background_color; ?>; color: <?php echo $font_color; ?>; padding: <?php echo $padding_y; ?>px <?php echo $padding_x; ?>px; border-radius: <?php echo $border_radius; ?>px; width: <?php echo $width . $width_size_type; ?>; height: <?php echo $height . $height_type; ?>; ">Some Text...</textarea>
 <?php endif; ?>
 
 <?php
@@ -676,7 +676,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     $background_color = $_SESSION['create_form'][$pos]['file_attachments']['styles']['background_color'];
 
     //Field Font Color.
-    $font_color = $_SESSION['create_form'][$pos]['file_attachments']['styles']['font_color'];
+    $font_color = $_SESSION['create_form'][$pos]['file_attachments']['styles']['font-color'];
 
     //Field Padding X.
     $padding_x = $_SESSION['create_form'][$pos]['file_attachments']['styles']['padding-x'];
@@ -716,7 +716,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     $background_color = $_SESSION['create_form'][$pos]['captcha']['styles']['background_color'];
 
     //Field Font Color.
-    $font_color = $_SESSION['create_form'][$pos]['captcha']['styles']['font_color'];
+    $font_color = $_SESSION['create_form'][$pos]['captcha']['styles']['font-color'];
 
     //Field Padding X.
     $padding_x = $_SESSION['create_form'][$pos]['captcha']['styles']['padding-x'];

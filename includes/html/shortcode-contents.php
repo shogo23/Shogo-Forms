@@ -561,7 +561,7 @@ $fa_field_count = 0;
               }
             </style>
             <li class="SF_fields SF_radio_field_<?php echo $radio_button_count; ?>">
-              <label for="<?php echo $radio_button_name; ?>"><?php echo $radio_button_label; ?></label>
+              <label for="<?php echo $radio_button_name; ?>" style="font-size: <?php echo $radio_field_label_font_size . $radio_field_label_font_size_type; ?>; color: <?php echo $radio_field_label_font_color; ?>;"><?php echo $radio_button_label; ?></label>
                 <ul class="<?php if ( $radio_field_display  == 'horizontal' ) echo 'SF_display_horizontal'; elseif ( $radio_field_display == 'vertical' ) echo 'SF_display_vertical'; ?>">
                   <?php $bc = 0; foreach ( $radio_button_bullets as $bullet ): ?>
                     <li>

@@ -3962,6 +3962,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 						var data = {
 							"action": "SF_forms",
 							"operation": "update_dropdown_field_font_color",
+							"pos": c,
 							"content": $elm["text"]
 						};
 
@@ -3977,6 +3978,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				var data = {
 					"action": "SF_forms",
 					"operation": "update_dropdown_field_font_color",
+					"pos": c,
 					"content": jQuery(".SF_ajax_form_text:nth-child( " + c1 + ") .SF_dropdown_field_font_color").val()
 				};
 
