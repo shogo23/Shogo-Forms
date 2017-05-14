@@ -67,6 +67,7 @@ $fa_field_count = 0;
       ?>
       <li class="SF_fields SF_csrf_field">
         <input type="hidden" id="SF_csrf" value="<?php echo wp_create_nonce( 'sf-nonce' ); ?>" />
+        <input type="hidden" id="status" value="unread" />
       </li>
 
       <?php
@@ -2500,6 +2501,9 @@ $fa_field_count = 0;
         <?php endif; ?>
 
       <?php $c++; endforeach; ?>
+
+      //Default Entry Status.
+      form_entries["status"] = jQuery(".SF_<?php echo $post_name; ?> #status").val();
 
       jQuery(".SF_<?php echo $post_name; ?> .SF_saving_entries").show();
 
