@@ -739,7 +739,12 @@ if ( ! defined( 'ABSPATH' ) ) {
   ?>
 
   <div>
-    <img src="/wp-content/plugins/shogo-forms/includes/captcha.php?post_name=dev" /><br />
+    <?php $ExactBrowserNameUA = $_SERVER['HTTP_USER_AGENT']; ?>
+    <?php if ( strpos(strtolower($ExactBrowserNameUA), "safari/") && strpos(strtolower($ExactBrowserNameUA), "chrome/") ): ?>
+      <img src="/wp-content/plugins/shogo-forms/includes/captcha.php?post_name=dev" /><br />
+    <?php else: ?>
+    <p><a target="_blank" href="/wp-content/plugins/shogo-forms/includes/captcha.php?post_name=dev">  Click here for image preview.</a></p>
+    <?php endif; ?>
     <input type="text" class="SF_captcha_field_preview SF_field_preview" value="Some Text" placeholder="<?php echo $placeholder; ?>" style="border-width: <?php echo $border_size; ?>px; border-style: solid; border-color:<?php echo $border_color; ?>; background-color: <?php echo $background_color; ?>; color: <?php echo $font_color; ?>; padding: <?php echo $padding_y; ?>px <?php echo $padding_x; ?>px; width: <?php echo $width . $width_type; ?>;" />
   </div>
 <?php endif; ?>

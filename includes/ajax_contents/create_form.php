@@ -1444,11 +1444,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 								$captcha_field_width_type = '%';
 							}
 						?>
-						<div class="SF_fa_field_custom_style_contents SF_custom_field_style" <?php if ( $form['submit']['styles']['required'] == 1 ) { echo 'style="display: block !important;"'; } ?>>
+						<div class="SF_fa_field_custom_style_contents SF_custom_field_style" <?php if ( $form['captcha']['styles']['required'] == 1 ) { echo 'style="display: block !important;"'; } ?>>
 							<h3>Captcha Field Preview</h3>
 							<div class="SF_captcha_preivew"></div>
-							<div class="SF_fa_field_prev_btn_container SF_field_prev_btn_container">
-								<span class="SF_fa_field_preview_btn SF_field_preview_btn button">Preview</span>
+							<div class="SF_captcha_field_prev_btn_container SF_field_prev_btn_container">
+								<span class="SF_captcha_field_preview_btn SF_field_preview_btn button">Preview</span>
 							</div>
 							<ul>
 								<li>
@@ -6679,7 +6679,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			});
 
 			//Captcha Preview Button on Click Event.
-			jQuery(".SF_ajax_form_text:nth-child( " + c1 + ") .SF_fa_field_preview_btn").on("click", function() {
+			jQuery(".SF_ajax_form_text:nth-child( " + c1 + ") .SF_captcha_field_preview_btn").on("click", function() {
 
 				SF_field_preview( c, "captcha" );
 			});
@@ -7371,6 +7371,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	//dito
 	//Field Preview Callback.
 	function SF_field_preview( pos, field_type ) {
+
 		//Field Preview Data.
 		var text_field_preview_data = {
 			"action": "SF_forms",
@@ -7380,6 +7381,50 @@ if ( ! defined( 'ABSPATH' ) ) {
 		};
 
 		var c1 = pos + 1;
+
+		var l = "<img src='/wp-content/plugins/shogo-forms/img/ajax-loader.gif' /> Loading...";
+
+		switch ( field_type ) {
+			case "text_field":
+				jQuery(".SF_ajax_form_text:nth-child( " + c1 + ") .SF_text_field_preview").html( l );
+			break;
+
+			case "number_field":
+				jQuery(".SF_ajax_form_text:nth-child( " + c1 + ") .SF_number_field_preview").html( l );
+			break;
+
+			case "email_field":
+				jQuery(".SF_ajax_form_text:nth-child( " + c1 + ") .SF_email_field_preview").html( l );
+			break;
+
+			case "dropdown_field":
+				jQuery(".SF_ajax_form_text:nth-child( " + c1 + ") .dropdown_field_preview").html( l );
+			break;
+
+			case "radio_button":
+				jQuery(".SF_ajax_form_text:nth-child( " + c1 + ") .radio_field_preview").html( l );
+			break;
+
+			case "checkbox":
+				jQuery(".SF_ajax_form_text:nth-child( " + c1 + ") .SF_checkbox_preview").html( l );
+			break;
+
+			case "textarea":
+				jQuery(".SF_ajax_form_text:nth-child( " + c1 + ") .textarea_field_preview").html( l );
+			break;
+
+			case "file_attachments":
+				jQuery(".SF_ajax_form_text:nth-child( " + c1 + ") .SF_fa_preview").html( l );
+			break;
+
+			case 'captcha':
+				jQuery(".SF_ajax_form_text:nth-child( " + c1 + ") .SF_captcha_preivew").html( l );
+			break;
+
+			case "submit":
+				jQuery(".SF_ajax_form_text:nth-child( " + c1 + ") .SF_submit_preview").html( l );
+			break;
+		}
 
 		jQuery.post(ajaxurl, text_field_preview_data, function( r ) {
 			switch ( field_type ) {
