@@ -6,7 +6,7 @@
 * Plugin URI: http://www.github.com/shogo23
 * Author: Gervic Caviteno
 * Author URI: http://www.facebook.com/gervic23
-* Version: 1.0.0
+* Version: 1.0.1
 * License: GPLV2
 * Requires at least: 4.0
 * Tested up to: 4.7

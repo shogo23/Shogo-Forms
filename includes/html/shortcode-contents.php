@@ -104,7 +104,7 @@ $fa_field_count = 0;
           ?>
           <?php if ( $text_field_style_required == 0 ): ?>
             <li class="SF_fields SF_text_field_<?php echo $text_field_count; ?>">
-              <label for="<?php echo $text_field_name; ?>"><?php echo $text_field_label; ?></label>
+              <label for="<?php echo $text_field_name; ?>"><?php _e( $text_field_label ); ?></label>
               <input type="text" id="<?php echo $text_field_name; ?>" class="SF_name_field_<?php echo $text_field_count; ?>" />
               <div class="<?php echo $text_field_name; ?>-error">&nbsp;</div>
             </li>
@@ -159,7 +159,7 @@ $fa_field_count = 0;
               $text_field_width = $form['text_field']['styles']['width_type']['width'];
             ?>
             <li class="SF_fields SF_text_field_<?php echo $text_field_count; ?>">
-              <label style="color: <?php echo $text_field_label_font_color; ?>; font-size: <?php echo $text_field_label_font_size . $text_field_label_font_size_type; ?>;" for="<?php echo $text_field_name; ?>"><?php echo $text_field_label; ?></label>
+              <label style="color: <?php echo $text_field_label_font_color; ?>; font-size: <?php echo $text_field_label_font_size . $text_field_label_font_size_type; ?>;" for="<?php echo $text_field_name; ?>"><?php _e( $text_field_label ); ?></label>
               <input type="text" id="<?php echo $text_field_name; ?>" class="SF_name_field_<?php echo $text_field_count; ?>" style="border: <?php echo $text_field_border_size . 'px solid ' . $text_field_border_color; ?>; background-color: <?php echo $text_field_background_color; ?>; color: <?php echo $text_field_font_color; ?>; padding: <?php echo $text_field_padding_y . 'px ' .$text_field_padding_x .'px'; ?>; width: <?php echo $text_field_width . $text_field_width_type; ?>;" placeholder="<?php echo $text_field_placeholder; ?>" />
               <div class="<?php echo $text_field_name; ?>-error">&nbsp;</div>
             </li>
@@ -194,7 +194,7 @@ $fa_field_count = 0;
           ?>
           <?php if ( $number_field_style_required == 0 ): ?>
             <li class="SF_fields SF_number_field_<?php echo $text_field_count; ?>">
-              <label for="<?php echo $number_field_name; ?>"><?php echo $number_field_label; ?></label>
+              <label for="<?php echo $number_field_name; ?>"><?php _e( $number_field_label ); ?></label>
               <input type="number" id="<?php echo $number_field_name; ?>" class="SF_name_field_<?php echo $number_field_count; ?>" />
               <div class="<?php echo $number_field_name; ?>-error">&nbsp;</div>
             </li>
@@ -249,7 +249,7 @@ $fa_field_count = 0;
               $number_field_width = $form['number_field']['styles']['width_type']['width'];
             ?>
             <li class="SF_fields SF_number_field_<?php echo $text_field_count; ?>">
-              <label style="color: <?php echo $number_field_label_font_color; ?>; font-size: <?php echo $number_field_label_font_size . $number_field_label_font_size_type; ?>;" for="<?php echo $number_field_name; ?>"><?php echo $number_field_label; ?></label>
+              <label style="color: <?php echo $number_field_label_font_color; ?>; font-size: <?php echo $number_field_label_font_size . $number_field_label_font_size_type; ?>;" for="<?php echo $number_field_name; ?>"><?php _e( $number_field_label ); ?></label>
               <input type="number" id="<?php echo $number_field_name; ?>" class="SF_name_field_<?php echo $number_field_count; ?>" style="border: <?php echo $number_field_border_size . 'px solid ' . $number_field_border_color; ?>; background-color: <?php echo $number_field_background_color; ?>; color: <?php echo $number_field_font_color; ?>; padding: <?php echo $number_field_padding_y . 'px ' .$number_field_padding_x .'px'; ?>; width: <?php echo $number_field_width . $number_field_width_type; ?>;" placeholder="<?php echo $number_field_placeholder; ?>" />
               <div class="<?php echo $number_field_name; ?>-error">&nbsp;</div>
             </li>
@@ -284,7 +284,7 @@ $fa_field_count = 0;
           ?>
           <?php if ( $email_field_style_required == 0 ): ?>
             <li class="SF_fields SF_email_field_<?php echo $email_field_count; ?>">
-              <label for="<?php echo $email_field_name; ?>"><?php echo $email_field_label; ?></label>
+              <label for="<?php echo $email_field_name; ?>"><?php _e( $email_field_label ); ?></label>
               <input type="text" id="<?php echo $email_field_name; ?>" class="SF_email_field_<?php echo $email_field_count; ?>" />
               <div class="<?php echo $email_field_name; ?>-error">&nbsp;</div>
             </li>
@@ -339,7 +339,7 @@ $fa_field_count = 0;
               $email_field_width = $form['email_field']['styles']['width_type']['width'];
             ?>
             <li class="SF_fields SF_email_field_<?php echo $email_field_count; ?>">
-              <label style="color: <?php echo $email_field_label_font_color; ?>; font-size: <?php echo $email_field_label_font_size . $email_field_label_font_size_type; ?>;" for="<?php echo $email_field_name; ?>"><?php echo $email_field_label; ?></label>
+              <label style="color: <?php echo $email_field_label_font_color; ?>; font-size: <?php echo $email_field_label_font_size . $email_field_label_font_size_type; ?>;" for="<?php echo $email_field_name; ?>"><?php _e( $email_field_label ); ?></label>
               <input type="text" id="<?php echo $email_field_name; ?>" class="SF_email_field_<?php echo $email_field_count; ?>" style="border: <?php echo $email_field_border_size . 'px solid ' . $email_field_border_color; ?>; background-color: <?php echo $email_field_background_color; ?>; color: <?php echo $email_field_font_color; ?>; padding: <?php echo $email_field_padding_y . 'px ' .$email_field_padding_x .'px'; ?>; width: <?php echo $email_field_width . $email_field_width_type; ?>;" placeholder="<?php echo $email_field_placeholder; ?>" />
               <div class="<?php echo $email_field_name; ?>-error">&nbsp;</div>
             </li>
@@ -378,7 +378,7 @@ $fa_field_count = 0;
 
           <?php if ( $dropdown_field_style_required == 0 ): ?>
             <li class="SF_fields SF_dropdown_field_<?php echo $dropdown_field_count; ?>">
-              <label for="<?php echo $dropdown_field_name; ?>"><?php echo $dropdown_field_label; ?></label>
+              <label for="<?php echo $dropdown_field_name; ?>"><?php _e( $dropdown_field_label ); ?></label>
               <select id="<?php echo $dropdown_field_name ?>" class="SF_dropdown_field_<?php echo $dropdown_field_count; ?>">
                 <option value="">Select <?php echo $dropdown_field_label ?></option>
                 <?php foreach ( $dropdown_field_options as $option ): ?>
@@ -439,7 +439,7 @@ $fa_field_count = 0;
               $dropdown_field_width = $form['dropdown_field']['styles']['width_type']['width'];
             ?>
             <li class="SF_fields SF_dropdown_field_<?php echo $dropdown_field_count; ?>">
-              <label style="color: <?php echo $dropdown_field_label_font_color; ?>; font-size: <?php echo $dropdown_field_label_font_size . $dropdown_field_label_font_size_type; ?>;" for="<?php echo $dropdown_field_name; ?>"><?php echo $dropdown_field_label; ?></label>
+              <label style="color: <?php echo $dropdown_field_label_font_color; ?>; font-size: <?php echo $dropdown_field_label_font_size . $dropdown_field_label_font_size_type; ?>;" for="<?php echo $dropdown_field_name; ?>"><?php _e( $dropdown_field_label ); ?></label>
               <select id="<?php echo $dropdown_field_name ?>" class="SF_dropdown_field_<?php echo $dropdown_field_count; ?>" style="border: <?php echo $dropdown_field_border_size . 'px solid ' . $dropdown_field_border_color; ?>; background-color: <?php echo $dropdown_field_background_color; ?>; color: <?php echo $dropdown_field_font_color; ?>; padding: <?php echo $dropdown_field_padding_y . 'px ' .$dropdown_field_padding_x .'px'; ?>; width: <?php echo $dropdown_field_width . $dropdown_field_width_type; ?>; height: auto;">
                 <option value="">Select <?php echo $dropdown_field_label ?></option>
                 <?php foreach ( $dropdown_field_options as $option ): ?>
@@ -490,7 +490,7 @@ $fa_field_count = 0;
 
           <?php if ( $form['radio_button']['styles']['required'] == 0 ): ?>
             <li class="SF_fields SF_radio_field_<?php echo $radio_button_count; ?>">
-              <label for="<?php echo $radio_button_name; ?>"><?php echo $radio_button_label; ?></label>
+              <label for="<?php echo $radio_button_name; ?>"><?php _e( $radio_button_label ); ?></label>
               <ul class="<?php if ( $radio_field_display  == 'horizontal' ) echo 'SF_display_horizontal'; elseif ( $radio_field_display == 'vertical' ) echo 'SF_display_vertical'; ?>">
                 <?php $b = 0; foreach ( $radio_button_bullets as $bullet ): ?>
                   <?php if ( $bullet['checked'] == 1 ): ?>
@@ -562,7 +562,7 @@ $fa_field_count = 0;
               }
             </style>
             <li class="SF_fields SF_radio_field_<?php echo $radio_button_count; ?>">
-              <label for="<?php echo $radio_button_name; ?>" style="font-size: <?php echo $radio_field_label_font_size . $radio_field_label_font_size_type; ?>; color: <?php echo $radio_field_label_font_color; ?>;"><?php echo $radio_button_label; ?></label>
+              <label for="<?php echo $radio_button_name; ?>" style="font-size: <?php echo $radio_field_label_font_size . $radio_field_label_font_size_type; ?>; color: <?php echo $radio_field_label_font_color; ?>;"><?php _e( $radio_button_label ); ?></label>
                 <ul class="<?php if ( $radio_field_display  == 'horizontal' ) echo 'SF_display_horizontal'; elseif ( $radio_field_display == 'vertical' ) echo 'SF_display_vertical'; ?>">
                   <?php $bc = 0; foreach ( $radio_button_bullets as $bullet ): ?>
                     <li>
@@ -623,7 +623,7 @@ $fa_field_count = 0;
           <?php if ( $checkbox_field_style_required == 0 ): ?>
             <li class="SF_fields SF_checkbox_field_<?php echo $checkbox_field_count; ?>">
               <?php if ( $checkbox_field_header == 0 ): ?>
-                <label for="<?php echo $checkbox_field_name ?>"><?php echo $checkbox_field_label; ?></label>
+                <label for="<?php echo $checkbox_field_name ?>"><?php _e( $checkbox_field_label ); ?></label>
               <?php endif; ?>
               <ul class="<?php if ( $form['checkbox']['display'] == 'horizontal' ) echo 'SF_display_horizontal'; elseif ( $form['checkbox']['display'] == 'vertical' ) echo 'SF_display_vertical'; ?>">
                 <?php $chx = 0; foreach( $form['checkbox']['checkboxes'] as $ch ): ?>
@@ -709,7 +709,7 @@ $fa_field_count = 0;
               </style>
 
               <?php if ( $checkbox_field_header == 0 ): ?>
-                <label for="<?php echo $checkbox_field_name ?>" style="color: <?php echo $checkbox_label_font_color ?>; font-size: <?php echo $checkbox_label_font_size . $checkbox_label_font_size_type; ?>;"><?php echo $checkbox_field_label; ?></label>
+                <label for="<?php echo $checkbox_field_name ?>" style="color: <?php echo $checkbox_label_font_color ?>; font-size: <?php echo $checkbox_label_font_size . $checkbox_label_font_size_type; ?>;"><?php _e( $checkbox_field_label ); ?></label>
               <?php endif; ?>
               <form class="SF_checkbox_form SF_checkbox_form_<?php echo $c_main; ?>">
                 <ul class="<?php if ( $form['checkbox']['display'] == 'horizontal' ) echo 'SF_display_horizontal'; elseif ( $form['checkbox']['display'] == 'vertical' ) echo 'SF_display_vertical'; ?>">
@@ -790,7 +790,7 @@ $fa_field_count = 0;
            ?>
            <?php if ( $textarea_field_style_required == 0 ): ?>
               <li class="SF_fields SF_textarea_field_<?php echo $textarea_field_count; ?>">
-                <label for="<?php echo $textarea_field_name; ?>"><?php echo $textarea_field_label; ?></label>
+                <label for="<?php echo $textarea_field_name; ?>"><?php _e( $textarea_field_label ); ?></label>
                 <textarea id="<?php echo $textarea_field_name; ?>" class="SF_textarea_field_<?php echo $textarea_field_count; ?>"></textarea>
                 <div class="<?php echo $textarea_field_name; ?>-error">&nbsp;</div>
               </li>
@@ -858,7 +858,7 @@ $fa_field_count = 0;
                 $textarea_field_style_height = $form['textarea']['styles']['height_type']['height'];
               ?>
               <li class="SF_fields SF_textarea_field_<?php echo $textarea_field_count; ?>">
-                <label style="color: <?php echo $textarea_field_label_font_color; ?>; font-size: <?php echo $textarea_field_label_font_size . $textarea_field_label_font_size_type; ?>;" for="<?php echo $textarea_field_name; ?>"><?php echo $textarea_field_label; ?></label>
+                <label style="color: <?php echo $textarea_field_label_font_color; ?>; font-size: <?php echo $textarea_field_label_font_size . $textarea_field_label_font_size_type; ?>;" for="<?php echo $textarea_field_name; ?>"><?php _e( $textarea_field_label ); ?></label>
                 <textarea id="<?php echo $textarea_field_name; ?>" class="SF_textarea_field_<?php echo $textarea_field_count; ?>"  style="border: <?php echo $textarea_field_border_size . 'px solid ' . $textarea_field_border_color; ?>; background-color: <?php echo $textarea_field_background_color; ?>; color: <?php echo $textarea_field_font_color; ?>; padding: <?php echo $textarea_field_padding_y . 'px ' .$textarea_field_padding_x .'px'; ?>; width: <?php echo $textarea_field_width . $textarea_field_width_type; ?>; height: <?php echo $textarea_field_style_height . $textarea_field_style_height_type; ?>;" placeholder="<?php echo $textarea_field_placeholder; ?>"></textarea>
                 <div class="<?php echo $textarea_field_name; ?>-error">&nbsp;</div>
               </li>
@@ -899,8 +899,8 @@ $fa_field_count = 0;
            ?>
            <?php if ( $form['file_attachments']['styles']['required'] == 0 ): ?>
               <li class="SF_fields_<?php echo $fa_field_count; ?>">
-                <label for="<?php echo $fa_field_name; ?>"><?php echo $fa_field_label; ?></label>
-                <input type="file" id="<?php echo $fa_field_name ?>" name="<?php echo $fa_field_name; ?>" class="SF_file_attachments_<?php echo $fa_field_count; ?>" />
+                <label for="<?php echo $fa_field_name; ?>"><?php _e( $fa_field_label ); ?></label>
+                <input type="file" id="<?php echo $fa_field_name ?>" name="<?php echo $fa_field_name; ?>" class="SF_file_attachments_<?php _e( $fa_field_count ); ?>" />
                 <div class="<?php echo $fa_field_name; ?>-error">&nbsp;</div>
               </li>
             <?php elseif ( $form['file_attachments']['styles']['required'] == 1 ): ?>
@@ -957,7 +957,7 @@ $fa_field_count = 0;
                 $fa_field_width = $form['file_attachments']['styles']['width_type']['width'];
               ?>
               <li class="SF_fields_<?php echo $fa_field_count; ?>">
-                <label style="color: <?php echo $fa_field_label_font_color; ?>; font-size: <?php echo $fa_field_label_font_size . $fa_field_label_font_size_type; ?>;" for="<?php echo $fa_field_name; ?>"><?php echo $fa_field_label; ?></label>
+                <label style="color: <?php echo $fa_field_label_font_color; ?>; font-size: <?php echo $fa_field_label_font_size . $fa_field_label_font_size_type; ?>;" for="<?php echo $fa_field_name; ?>"><?php _e( $fa_field_label ); ?></label>
                 <input type="file" id="<?php echo $fa_field_name ?>" name="<?php echo $fa_field_name; ?>" class="SF_file_attachments_<?php echo $fa_field_count; ?>" style="border: <?php echo $fa_field_border_size . 'px solid ' . $fa_field_border_color; ?>; background-color: <?php echo $fa_field_background_color; ?>; color: <?php echo $fa_field_font_color; ?>; padding: <?php echo $fa_field_padding_y . 'px ' .$fa_field_padding_x .'px'; ?>; width: <?php echo $fa_field_width . $fa_field_width_type; ?>;" />
                 <div class="<?php echo $fa_field_name; ?>-error">&nbsp;</div>
               </li>
