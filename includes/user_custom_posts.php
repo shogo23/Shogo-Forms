@@ -113,10 +113,10 @@ class SF_user_custom_posts {
 
       //Get Post Title and replace spaces into dashes.
       $title = str_ireplace( ' ', '_', get_the_title() );
-      $title2 = str_ireplace( ' ', '-', get_the_title() );
+      //$title2 = str_ireplace( ' ', '-', get_the_title() );
 
       //Get Unread Entries.
-      $unread_count = SF_Methods::get_form_unread_entries( strtolower( $title2 ) );
+      $unread_count = SF_Methods::get_form_unread_entries( strtolower( $title ) );
 
       //If $unread_count is is morethan 0 print out results.
       if ( $unread_count > 0 ) {
@@ -196,6 +196,10 @@ class SF_user_custom_posts {
 
     //Get All Entries in Specific Post Type (the $slug).
     //WP Query Properties.
+    
+    //Replace dash to underscore.
+    $slug = str_ireplace( '-', '_', $slug );
+      
     $args = array(
       'post_type'               => $slug,
       'order'                   => 'DESC',
